@@ -1,7 +1,10 @@
 <template>
-  <select class="select" v-bind="$attrs" v-model="selectedOption">
-    <option v-for="option in options" :key="option.value" :value="option.value">{{ option.label }}</option>
-  </select>
+    <div class="input">
+        <select class="input__text" v-bind="$attrs" v-model="selectedOption" required>
+            <option v-for="option in options" :key="option.value" :value="option.value" class="input__text__option">{{
+                option.label }}</option>
+        </select>
+    </div>
 </template>
 
 <script>
@@ -14,7 +17,7 @@ export default {
         },
         value: {
             required: true,
-        }
+        },
     },
     computed: {
         selectedOption: {
@@ -23,26 +26,10 @@ export default {
             },
             set(newValue) {
                 this.$emit("input", newValue);
-            }
+            },
         },
     },
-//     methods: {
-//         toggle() {
-//             this.isOpen = !this.isOpen;
-//         },
-//         handleClick() {
-//             this.selectedOption = optionValue
-//             this.isOpen = false;
-//         }
-//     },
-//     watch: {
-//         value(newValue) {
-//             this.selectedOption = newValue;
-//         }
-//     }
 }
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

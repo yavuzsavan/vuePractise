@@ -12,5 +12,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.title {
+    color: $ebony;
+    font-family: $secondary-font;
+    font-size: $fs-lg;
+    font-weight: $fw-md;
+}
 </style>

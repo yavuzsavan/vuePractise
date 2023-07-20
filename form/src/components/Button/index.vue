@@ -17,5 +17,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.btn {
+    padding: $sm;
+    border-radius: $b-lg;
+    cursor: pointer;
+    font-family: $secondary-font;
+    font-size: $fs-md;
+    color: $white;
+    background: $ebony;
+}
 </style>

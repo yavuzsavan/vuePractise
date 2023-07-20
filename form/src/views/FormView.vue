@@ -20,8 +20,7 @@ export default {
 <style lang="scss" scoped>
 
 div{
-    display: flex;
-    justify-content: center;
-    background-color: #F5F5FD;
+    @include flex(row, 0, center);
+    background-color: $selago;
 }
 </style>
